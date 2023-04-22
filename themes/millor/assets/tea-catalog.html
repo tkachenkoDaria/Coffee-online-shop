@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catalog tea</title>
+  <link rel="stylesheet" href="./assets/swiper-bundle.css?_v=20221226110158" />
+  <link rel="stylesheet" href="./assets/bootstrap-reboot.min.css?_v=20221226110158" />
+  <link rel="stylesheet" href="./assets/bootstrap-grid.min.css?_v=20221226110158" />
+  <!-- <link rel="stylesheet" href="./css/main.css?_v=20221226110158" /> -->
+  <link rel="stylesheet" href="./css/main.min.css?_v=20221226110158" />
+</head>
+
+<body>
+    <header class="header">
+  <div class="container">
+    <div class="row">
+      <div class="header-wrapp">
+        <div class="col-lg-3">
+          <a href="/" class="logo">
+            <img src="./img/header/logo.svg" alt="logo" class="logo__img" />
+          </a>
+        </div>
+        <div class="col-lg-7">
+          <nav class="menu-header">
+            <ul class="navigation">
+              <li>
+                <a href="../cart.html">Каталог товарів</a>
+              </li>
+              <li>
+                <a href="../card-product-tea.html">Блог</a>
+              </li>
+              <li>
+                <a href="../card-product-cofe.html">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-lg-2">
+          <div class="button-group">
+            <form action="#" class="searsh-form">
+              <input type="search" name="search" id="" class="search" placeholder="Пошук по товарах" />
+              <button class="search-icon" type="submit">
+                <svg viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="search-icon__svg">
+                  <path
+                    d="M34 33L26.2667 25.5083M30.4444 15.7778C30.4444 23.387 24.0769 29.5556 16.2222 29.5556C8.36751 29.5556 2 23.387 2 15.7778C2 8.16852 8.36751 2 16.2222 2C24.0769 2 30.4444 8.16852 30.4444 15.7778Z"
+                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+              <span class="close"></span>
+            </form>
+            <button type="button" class="cart">
+              <svg viewBox="0 0 37 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2 2H8L12.02 21.7662C12.1572 22.4458 12.5329 23.0563 13.0813 23.4908C13.6298 23.9253 14.316 24.1561 15.02 24.1429H29.6C30.304 24.1561 30.9902 23.9253 31.5387 23.4908C32.0871 23.0563 32.4628 22.4458 32.6 21.7662L35 9.38095H9.5M15.5 31.5238C15.5 32.3391 14.8284 33 14 33C13.1716 33 12.5 32.3391 12.5 31.5238C12.5 30.7085 13.1716 30.0476 14 30.0476C14.8284 30.0476 15.5 30.7085 15.5 31.5238ZM32 31.5238C32 32.3391 31.3284 33 30.5 33C29.6716 33 29 32.3391 29 31.5238C29 30.7085 29.6716 30.0476 30.5 30.0476C31.3284 30.0476 32 30.7085 32 31.5238Z"
+                  stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <button type="button" class="login">
+              <svg viewBox="0 0 33 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M31 34V30.4444C31 28.5585 30.2362 26.7497 28.8765 25.4161C27.5169 24.0825 25.6728 23.3333 23.75 23.3333H9.25C7.32718 23.3333 5.48311 24.0825 4.12348 25.4161C2.76384 26.7497 2 28.5585 2 30.4444V34M23.75 9.11111C23.75 13.0385 20.5041 16.2222 16.5 16.2222C12.4959 16.2222 9.25 13.0385 9.25 9.11111C9.25 5.18375 12.4959 2 16.5 2C20.5041 2 23.75 5.18375 23.75 9.11111Z"
+                  stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="mobi-nenu">
+        <div class="col-5 col-lg-3">
+          <a href="/" class="logo">
+            <img src="./img/header/logo.svg" alt="logo" class="logo__img" />
+          </a>
+        </div>
+        <div class="col-5 col-lg-4 col-xl-2">
+          <div class="button-group">
+            <button type="button" class="cart">
+              <svg viewBox="0 0 37 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2 2H8L12.02 21.7662C12.1572 22.4458 12.5329 23.0563 13.0813 23.4908C13.6298 23.9253 14.316 24.1561 15.02 24.1429H29.6C30.304 24.1561 30.9902 23.9253 31.5387 23.4908C32.0871 23.0563 32.4628 22.4458 32.6 21.7662L35 9.38095H9.5M15.5 31.5238C15.5 32.3391 14.8284 33 14 33C13.1716 33 12.5 32.3391 12.5 31.5238C12.5 30.7085 13.1716 30.0476 14 30.0476C14.8284 30.0476 15.5 30.7085 15.5 31.5238ZM32 31.5238C32 32.3391 31.3284 33 30.5 33C29.6716 33 29 32.3391 29 31.5238C29 30.7085 29.6716 30.0476 30.5 30.0476C31.3284 30.0476 32 30.7085 32 31.5238Z"
+                  stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <button type="button" class="login">
+              <svg viewBox="0 0 33 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M31 34V30.4444C31 28.5585 30.2362 26.7497 28.8765 25.4161C27.5169 24.0825 25.6728 23.3333 23.75 23.3333H9.25C7.32718 23.3333 5.48311 24.0825 4.12348 25.4161C2.76384 26.7497 2 28.5585 2 30.4444V34M23.75 9.11111C23.75 13.0385 20.5041 16.2222 16.5 16.2222C12.4959 16.2222 9.25 13.0385 9.25 9.11111C9.25 5.18375 12.4959 2 16.5 2C20.5041 2 23.75 5.18375 23.75 9.11111Z"
+                  stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="nav-bar">
+              <div class="nav-icon">
+                <span class="line" id="one"></span>
+                <span class="line" id="two"></span>
+                <span class="line" id="three"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-xl-7">
+        <nav class="menu-header menu-header_mobi">
+          <ul class="navigation navigation_mobi">
+            <li>
+              <a href="#">Каталог товарів</a>
+            </li>
+            <li>
+              <a href="#">Блог</a>
+            </li>
+            <li>
+              <a href="#">Контакти</a>
+            </li>
+          </ul>
+          <form action="#" class="searsh-form searsh-form_mobi">
+            <input type="search" name="search" class="search search_mobi" placeholder="Пошук по товарах" />
+          </form>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+    <section class="offer-header-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="breadcrumb d-none d-sm-block">
+                        <li class="breadcrumb__list">
+                            <a href="# " class="breadcrumb__item">Головна </a>
+                        </li>
+                        <li class="breadcrumb__list">
+                            <a href="# " class="breadcrumb__item">Каталог товарів </a>
+                        </li>
+                        <li class="breadcrumb__list active">
+                            <span>Чай та кавові напої</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="header-wrapper">
+                    <div class="col-lg-7">
+                        <h1>Чай та кавові напої</h1>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="tea-photo-catalig">
+                            <picture><source srcset="img/tea-catalog/tea-offer.webp" type="image/webp"><img class="tea-catalog-img" src="img/tea-catalog/tea-offer.png" alt="tea-offer"></picture>
+                            <!-- <picture><source srcset="img/offer/slider_one_one.webp" type="image/webp"><img class="coffe-catalog-img-bg" src="img/offer/slider_one_one.png" alt="coffe"></picture> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End breadcrumb -->
+    <div class="section-bg section-bg_tea"></div>
+    <section class="tea-category">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="tea-category-wrapp">
+                        <div class="tea-category-card">
+                            <img class="tea-category-card__img" src="img/tea-catalog/tea-category-card-one.png"
+                                alt="category img">
+                            <p class="tea-category-card__name">Чорний чай</p>
+                        </div>
+                        <div class="tea-category-card">
+                            <img class="tea-category-card__img" src="img/tea-catalog/tea-category-card-two.png"
+                                alt="category img">
+                            <p class="tea-category-card__name">Зелений чай</p>
+                        </div>
+                        <div class="tea-category-card">
+                            <img class="tea-category-card__img" src="img/tea-catalog/tea-category-card-three.png"
+                                alt="category img">
+                            <p class="tea-category-card__name">Молочний улун</p>
+                        </div>
+
+                        <div class="tea-category-card">
+                            <img class="tea-category-card__img" src="img/tea-catalog/tea-category-card-one.png"
+                                alt="category img">
+                            <p class="tea-category-card__name">Трав'яний чай</p>
+                        </div>
+                        <div class="tea-category-card">
+                            <img class="tea-category-card__img" src="img/tea-catalog/tea-category-card-two.png"
+                                alt="category img">
+                            <p class="tea-category-card__name">Матча</p>
+                        </div>
+                        <div class="tea-category-card">
+                            <img class="tea-category-card__img" src="img/tea-catalog/tea-category-card-three.png"
+                                alt="category img">
+                            <p class="tea-category-card__name">Пуер</p>
+                        </div>
+                        <div class="tea-category-card">
+                            <img class="tea-category-card__img" src="img/tea-catalog/tea-category-card-four.png"
+                                alt="category img">
+                            <p class="tea-category-card__name">Кавові напої</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="card-coffe-catalog">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p>Сортування</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="coffe-catalog-wrapp">
+                        <!-- card tea 1 -->
+                        <div class="card-tea card-coffe card-coffe_catalog">
+                            <div class="card-tea__wrapp-top">
+                                <span class="card-coffe__icon card-coffe__icon_tea"></span>
+                                <div class="card-coffe__items">
+                                    <div class="card-reviews card-reviews_coffe">
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                    </div>
+                                    <div class="response">
+                                        <p>4.0</p>
+                                        <span>(32 відгука)</span>
+                                    </div>
+                                </div>
+                                <div class="itc-select itc-select_card-tea" id="select-1">
+                                    <button type="button" class="itc-select__toggle" name="numbers" value="250г"
+                                        data-select="toggle" data-index="0">250г</button>
+                                    <div class="itc-select__dropdown">
+                                        <ul class="itc-select__options">
+                                            <li class="itc-select__option itc-select__option_selected"
+                                                data-select="option" data-value="250г" data-index="0">250г</li>
+                                            <li class="itc-select__option" data-select="option" data-value="750г"
+                                                data-index="1">750г
+                                            </li>
+                                            <li class="itc-select__option" data-select="option" data-value="1000г"
+                                                data-index="2">
+                                                1000г</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <picture><source srcset="img/tea-catalog/tea-category-card-one.webp" type="image/webp"><img class="card-tea__img" src="img/tea-catalog/tea-category-card-one.png" alt="product"></picture>
+                            <h4 class="goods-name-coffe card-tea__name">Найменування товару</h4>
+                            <p class="goods-desc-coffe card-tea__desc">Чорний чай</p>
+                            <span class="price-sale">350 ₴</span>
+                            <div class="price-btn">
+                                <span>250 ₴</span>
+                                <button type="button" class="price-basket">В кошик</button>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <!-- card tea 2 -->
+                        <div class="card-tea card-coffe card-coffe_catalog">
+                            <div class="card-tea__wrapp-top">
+                                <!-- <span class="card-coffe__icon card-coffe__icon_tea"></span> -->
+                                <div class="card-coffe__items">
+                                    <div class="card-reviews card-reviews_coffe">
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                    </div>
+                                    <div class="response">
+                                        <p>4.0</p>
+                                        <span>(32 відгука)</span>
+                                    </div>
+                                </div>
+                                <div class="itc-select itc-select_card-tea" id="select-1">
+                                    <button type="button" class="itc-select__toggle" name="numbers" value="250г"
+                                        data-select="toggle" data-index="0">250г</button>
+                                    <div class="itc-select__dropdown">
+                                        <ul class="itc-select__options">
+                                            <li class="itc-select__option itc-select__option_selected"
+                                                data-select="option" data-value="250г" data-index="0">250г</li>
+                                            <li class="itc-select__option" data-select="option" data-value="750г"
+                                                data-index="1">750г
+                                            </li>
+                                            <li class="itc-select__option" data-select="option" data-value="1000г"
+                                                data-index="2">
+                                                1000г</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <picture><source srcset="img/tea-catalog/tea-category-card-one.webp" type="image/webp"><img class="card-tea__img" src="img/tea-catalog/tea-category-card-one.png" alt="product"></picture>
+                            <h4 class="goods-name-coffe card-tea__name">Найменування товару</h4>
+                            <p class="goods-desc-coffe card-tea__desc">Чорний чай</p>
+                            <!-- <span class="price-sale">350 ₴</span> -->
+                            <div class="price-btn">
+                                <span>250 ₴</span>
+                                <button type="button" class="price-basket">В кошик</button>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <!-- card tea 3 -->
+                        <div class="card-tea card-coffe card-coffe_catalog">
+                            <div class="card-tea__wrapp-top">
+                                <!-- <span class="card-coffe__icon card-coffe__icon_tea"></span> -->
+                                <div class="card-coffe__items">
+                                    <div class="card-reviews card-reviews_coffe">
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                    </div>
+                                    <div class="response">
+                                        <p>4.0</p>
+                                        <span>(32 відгука)</span>
+                                    </div>
+                                </div>
+                                <div class="itc-select itc-select_card-tea" id="select-1">
+                                    <button type="button" class="itc-select__toggle" name="numbers" value="250г"
+                                        data-select="toggle" data-index="0">250г</button>
+                                    <div class="itc-select__dropdown">
+                                        <ul class="itc-select__options">
+                                            <li class="itc-select__option itc-select__option_selected"
+                                                data-select="option" data-value="250г" data-index="0">250г</li>
+                                            <li class="itc-select__option" data-select="option" data-value="750г"
+                                                data-index="1">750г
+                                            </li>
+                                            <li class="itc-select__option" data-select="option" data-value="1000г"
+                                                data-index="2">
+                                                1000г</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <picture><source srcset="img/tea-catalog/tea-category-card-one.webp" type="image/webp"><img class="card-tea__img" src="img/tea-catalog/tea-category-card-one.png" alt="product"></picture>
+                            <h4 class="goods-name-coffe card-tea__name">Найменування товару</h4>
+                            <p class="goods-desc-coffe card-tea__desc">Чорний чай</p>
+                            <!-- <span class="price-sale">350 ₴</span> -->
+                            <div class="price-btn">
+                                <span>250 ₴</span>
+                                <button type="button" class="price-basket">В кошик</button>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <!-- card tea 4 -->
+                        <div class="card-tea card-coffe card-coffe_catalog">
+                            <div class="card-tea__wrapp-top">
+                                <!-- <span class="card-coffe__icon card-coffe__icon_tea"></span> -->
+                                <div class="card-coffe__items">
+                                    <div class="card-reviews card-reviews_coffe">
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                    </div>
+                                    <div class="response">
+                                        <p>4.0</p>
+                                        <span>(32 відгука)</span>
+                                    </div>
+                                </div>
+                                <div class="itc-select itc-select_card-tea" id="select-1">
+                                    <button type="button" class="itc-select__toggle" name="numbers" value="250г"
+                                        data-select="toggle" data-index="0">250г</button>
+                                    <div class="itc-select__dropdown">
+                                        <ul class="itc-select__options">
+                                            <li class="itc-select__option itc-select__option_selected"
+                                                data-select="option" data-value="250г" data-index="0">250г</li>
+                                            <li class="itc-select__option" data-select="option" data-value="750г"
+                                                data-index="1">750г
+                                            </li>
+                                            <li class="itc-select__option" data-select="option" data-value="1000г"
+                                                data-index="2">
+                                                1000г</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <picture><source srcset="img/tea-catalog/tea-category-card-one.webp" type="image/webp"><img class="card-tea__img" src="img/tea-catalog/tea-category-card-one.png" alt="product"></picture>
+                            <h4 class="goods-name-coffe card-tea__name">Найменування товару</h4>
+                            <p class="goods-desc-coffe card-tea__desc">Чорний чай</p>
+                            <!-- <span class="price-sale">350 ₴</span> -->
+                            <div class="price-btn">
+                                <span>250 ₴</span>
+                                <button type="button" class="price-basket">В кошик</button>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <!-- card tea 5 -->
+                        <div class="card-tea card-coffe card-coffe_catalog">
+                            <div class="card-tea__wrapp-top">
+                                <!-- <span class="card-coffe__icon card-coffe__icon_tea"></span> -->
+                                <div class="card-coffe__items">
+                                    <div class="card-reviews card-reviews_coffe">
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                    </div>
+                                    <div class="response">
+                                        <p>4.0</p>
+                                        <span>(32 відгука)</span>
+                                    </div>
+                                </div>
+                                <div class="itc-select itc-select_card-tea" id="select-1">
+                                    <button type="button" class="itc-select__toggle" name="numbers" value="250г"
+                                        data-select="toggle" data-index="0">250г</button>
+                                    <div class="itc-select__dropdown">
+                                        <ul class="itc-select__options">
+                                            <li class="itc-select__option itc-select__option_selected"
+                                                data-select="option" data-value="250г" data-index="0">250г</li>
+                                            <li class="itc-select__option" data-select="option" data-value="750г"
+                                                data-index="1">750г
+                                            </li>
+                                            <li class="itc-select__option" data-select="option" data-value="1000г"
+                                                data-index="2">
+                                                1000г</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <picture><source srcset="img/tea-catalog/tea-category-card-one.webp" type="image/webp"><img class="card-tea__img" src="img/tea-catalog/tea-category-card-one.png" alt="product"></picture>
+                            <h4 class="goods-name-coffe card-tea__name">Найменування товару</h4>
+                            <p class="goods-desc-coffe card-tea__desc">Чорний чай</p>
+                            <!-- <span class="price-sale">350 ₴</span> -->
+                            <div class="price-btn">
+                                <span>250 ₴</span>
+                                <button type="button" class="price-basket">В кошик</button>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <!-- card tea 6 -->
+                        <div class="card-tea card-coffe card-coffe_catalog">
+                            <div class="card-tea__wrapp-top">
+                                <!-- <span class="card-coffe__icon card-coffe__icon_tea"></span> -->
+                                <div class="card-coffe__items">
+                                    <div class="card-reviews card-reviews_coffe">
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                    </div>
+                                    <div class="response">
+                                        <p>4.0</p>
+                                        <span>(32 відгука)</span>
+                                    </div>
+                                </div>
+                                <div class="itc-select itc-select_card-tea" id="select-1">
+                                    <button type="button" class="itc-select__toggle" name="numbers" value="250г"
+                                        data-select="toggle" data-index="0">250г</button>
+                                    <div class="itc-select__dropdown">
+                                        <ul class="itc-select__options">
+                                            <li class="itc-select__option itc-select__option_selected"
+                                                data-select="option" data-value="250г" data-index="0">250г</li>
+                                            <li class="itc-select__option" data-select="option" data-value="750г"
+                                                data-index="1">750г
+                                            </li>
+                                            <li class="itc-select__option" data-select="option" data-value="1000г"
+                                                data-index="2">
+                                                1000г</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <picture><source srcset="img/tea-catalog/tea-category-card-one.webp" type="image/webp"><img class="card-tea__img" src="img/tea-catalog/tea-category-card-one.png" alt="product"></picture>
+                            <h4 class="goods-name-coffe card-tea__name">Найменування товару</h4>
+                            <p class="goods-desc-coffe card-tea__desc">Чорний чай</p>
+                            <!-- <span class="price-sale">350 ₴</span> -->
+                            <div class="price-btn">
+                                <span>250 ₴</span>
+                                <button type="button" class="price-basket">В кошик</button>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <!-- card tea 7 -->
+                        <div class="card-tea card-coffe card-coffe_catalog">
+                            <div class="card-tea__wrapp-top">
+                                <!-- <span class="card-coffe__icon card-coffe__icon_tea"></span> -->
+                                <div class="card-coffe__items">
+                                    <div class="card-reviews card-reviews_coffe">
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                    </div>
+                                    <div class="response">
+                                        <p>4.0</p>
+                                        <span>(32 відгука)</span>
+                                    </div>
+                                </div>
+                                <div class="itc-select itc-select_card-tea" id="select-1">
+                                    <button type="button" class="itc-select__toggle" name="numbers" value="250г"
+                                        data-select="toggle" data-index="0">250г</button>
+                                    <div class="itc-select__dropdown">
+                                        <ul class="itc-select__options">
+                                            <li class="itc-select__option itc-select__option_selected"
+                                                data-select="option" data-value="250г" data-index="0">250г</li>
+                                            <li class="itc-select__option" data-select="option" data-value="750г"
+                                                data-index="1">750г
+                                            </li>
+                                            <li class="itc-select__option" data-select="option" data-value="1000г"
+                                                data-index="2">
+                                                1000г</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <picture><source srcset="img/tea-catalog/tea-category-card-one.webp" type="image/webp"><img class="card-tea__img" src="img/tea-catalog/tea-category-card-one.png" alt="product"></picture>
+                            <h4 class="goods-name-coffe card-tea__name">Найменування товару</h4>
+                            <p class="goods-desc-coffe card-tea__desc">Чорний чай</p>
+                            <!-- <span class="price-sale">350 ₴</span> -->
+                            <div class="price-btn">
+                                <span>250 ₴</span>
+                                <button type="button" class="price-basket">В кошик</button>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <!-- card tea 8 -->
+                        <div class="card-tea card-coffe card-coffe_catalog">
+                            <div class="card-tea__wrapp-top">
+                                <!-- <span class="card-coffe__icon card-coffe__icon_tea"></span> -->
+                                <div class="card-coffe__items">
+                                    <div class="card-reviews card-reviews_coffe">
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                    </div>
+                                    <div class="response">
+                                        <p>4.0</p>
+                                        <span>(32 відгука)</span>
+                                    </div>
+                                </div>
+                                <div class="itc-select itc-select_card-tea" id="select-1">
+                                    <button type="button" class="itc-select__toggle" name="numbers" value="250г"
+                                        data-select="toggle" data-index="0">250г</button>
+                                    <div class="itc-select__dropdown">
+                                        <ul class="itc-select__options">
+                                            <li class="itc-select__option itc-select__option_selected"
+                                                data-select="option" data-value="250г" data-index="0">250г</li>
+                                            <li class="itc-select__option" data-select="option" data-value="750г"
+                                                data-index="1">750г
+                                            </li>
+                                            <li class="itc-select__option" data-select="option" data-value="1000г"
+                                                data-index="2">
+                                                1000г</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <picture><source srcset="img/tea-catalog/tea-category-card-one.webp" type="image/webp"><img class="card-tea__img" src="img/tea-catalog/tea-category-card-one.png" alt="product"></picture>
+                            <h4 class="goods-name-coffe card-tea__name">Найменування товару</h4>
+                            <p class="goods-desc-coffe card-tea__desc">Чорний чай</p>
+                            <!-- <span class="price-sale">350 ₴</span> -->
+                            <div class="price-btn">
+                                <span>250 ₴</span>
+                                <button type="button" class="price-basket">В кошик</button>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <!-- card tea 9 -->
+                        <div class="card-tea card-coffe card-coffe_catalog">
+                            <div class="card-tea__wrapp-top">
+                                <!-- <span class="card-coffe__icon card-coffe__icon_tea"></span> -->
+                                <div class="card-coffe__items">
+                                    <div class="card-reviews card-reviews_coffe">
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                    </div>
+                                    <div class="response">
+                                        <p>4.0</p>
+                                        <span>(32 відгука)</span>
+                                    </div>
+                                </div>
+                                <div class="itc-select itc-select_card-tea" id="select-1">
+                                    <button type="button" class="itc-select__toggle" name="numbers" value="250г"
+                                        data-select="toggle" data-index="0">250г</button>
+                                    <div class="itc-select__dropdown">
+                                        <ul class="itc-select__options">
+                                            <li class="itc-select__option itc-select__option_selected"
+                                                data-select="option" data-value="250г" data-index="0">250г</li>
+                                            <li class="itc-select__option" data-select="option" data-value="750г"
+                                                data-index="1">750г
+                                            </li>
+                                            <li class="itc-select__option" data-select="option" data-value="1000г"
+                                                data-index="2">
+                                                1000г</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <picture><source srcset="img/tea-catalog/tea-category-card-one.webp" type="image/webp"><img class="card-tea__img" src="img/tea-catalog/tea-category-card-one.png" alt="product"></picture>
+                            <h4 class="goods-name-coffe card-tea__name">Найменування товару</h4>
+                            <p class="goods-desc-coffe card-tea__desc">Чорний чай</p>
+                            <!-- <span class="price-sale">350 ₴</span> -->
+                            <div class="price-btn">
+                                <span>250 ₴</span>
+                                <button type="button" class="price-basket">В кошик</button>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <!-- card tea 10 -->
+                        <div class="card-tea card-coffe card-coffe_catalog">
+                            <div class="card-tea__wrapp-top">
+                                <!-- <span class="card-coffe__icon card-coffe__icon_tea"></span> -->
+                                <div class="card-coffe__items">
+                                    <div class="card-reviews card-reviews_coffe">
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                    </div>
+                                    <div class="response">
+                                        <p>4.0</p>
+                                        <span>(32 відгука)</span>
+                                    </div>
+                                </div>
+                                <div class="itc-select itc-select_card-tea" id="select-1">
+                                    <button type="button" class="itc-select__toggle" name="numbers" value="250г"
+                                        data-select="toggle" data-index="0">250г</button>
+                                    <div class="itc-select__dropdown">
+                                        <ul class="itc-select__options">
+                                            <li class="itc-select__option itc-select__option_selected"
+                                                data-select="option" data-value="250г" data-index="0">250г</li>
+                                            <li class="itc-select__option" data-select="option" data-value="750г"
+                                                data-index="1">750г
+                                            </li>
+                                            <li class="itc-select__option" data-select="option" data-value="1000г"
+                                                data-index="2">
+                                                1000г</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <picture><source srcset="img/tea-catalog/tea-category-card-one.webp" type="image/webp"><img class="card-tea__img" src="img/tea-catalog/tea-category-card-one.png" alt="product"></picture>
+                            <h4 class="goods-name-coffe card-tea__name">Найменування товару</h4>
+                            <p class="goods-desc-coffe card-tea__desc">Чорний чай</p>
+                            <!-- <span class="price-sale">350 ₴</span> -->
+                            <div class="price-btn">
+                                <span>250 ₴</span>
+                                <button type="button" class="price-basket">В кошик</button>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <!-- card tea 11 -->
+                        <div class="card-tea card-coffe card-coffe_catalog">
+                            <div class="card-tea__wrapp-top">
+                                <!-- <span class="card-coffe__icon card-coffe__icon_tea"></span> -->
+                                <div class="card-coffe__items">
+                                    <div class="card-reviews card-reviews_coffe">
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                    </div>
+                                    <div class="response">
+                                        <p>4.0</p>
+                                        <span>(32 відгука)</span>
+                                    </div>
+                                </div>
+                                <div class="itc-select itc-select_card-tea" id="select-1">
+                                    <button type="button" class="itc-select__toggle" name="numbers" value="250г"
+                                        data-select="toggle" data-index="0">250г</button>
+                                    <div class="itc-select__dropdown">
+                                        <ul class="itc-select__options">
+                                            <li class="itc-select__option itc-select__option_selected"
+                                                data-select="option" data-value="250г" data-index="0">250г</li>
+                                            <li class="itc-select__option" data-select="option" data-value="750г"
+                                                data-index="1">750г
+                                            </li>
+                                            <li class="itc-select__option" data-select="option" data-value="1000г"
+                                                data-index="2">
+                                                1000г</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <picture><source srcset="img/tea-catalog/tea-category-card-one.webp" type="image/webp"><img class="card-tea__img" src="img/tea-catalog/tea-category-card-one.png" alt="product"></picture>
+                            <h4 class="goods-name-coffe card-tea__name">Найменування товару</h4>
+                            <p class="goods-desc-coffe card-tea__desc">Чорний чай</p>
+                            <!-- <span class="price-sale">350 ₴</span> -->
+                            <div class="price-btn">
+                                <span>250 ₴</span>
+                                <button type="button" class="price-basket">В кошик</button>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <!-- card tea 12 -->
+                        <div class="card-tea card-coffe card-coffe_catalog">
+                            <div class="card-tea__wrapp-top">
+                                <!-- <span class="card-coffe__icon card-coffe__icon_tea"></span> -->
+                                <div class="card-coffe__items">
+                                    <div class="card-reviews card-reviews_coffe">
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                        <span class="card-reviews__star"></span>
+                                    </div>
+                                    <div class="response">
+                                        <p>4.0</p>
+                                        <span>(32 відгука)</span>
+                                    </div>
+                                </div>
+                                <div class="itc-select itc-select_card-tea" id="select-1">
+                                    <button type="button" class="itc-select__toggle" name="numbers" value="250г"
+                                        data-select="toggle" data-index="0">250г</button>
+                                    <div class="itc-select__dropdown">
+                                        <ul class="itc-select__options">
+                                            <li class="itc-select__option itc-select__option_selected"
+                                                data-select="option" data-value="250г" data-index="0">250г</li>
+                                            <li class="itc-select__option" data-select="option" data-value="750г"
+                                                data-index="1">750г
+                                            </li>
+                                            <li class="itc-select__option" data-select="option" data-value="1000г"
+                                                data-index="2">
+                                                1000г</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <picture><source srcset="img/tea-catalog/tea-category-card-one.webp" type="image/webp"><img class="card-tea__img" src="img/tea-catalog/tea-category-card-one.png" alt="product"></picture>
+                            <h4 class="goods-name-coffe card-tea__name">Найменування товару</h4>
+                            <p class="goods-desc-coffe card-tea__desc">Чорний чай</p>
+                            <!-- <span class="price-sale">350 ₴</span> -->
+                            <div class="price-btn">
+                                <span>250 ₴</span>
+                                <button type="button" class="price-basket">В кошик</button>
+                            </div>
+                        </div>
+                        <!--  -->
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <button class="see-all-card">Показати ще</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="footer-title">Підписка на новини та розсилку</h2>
+        <p class="footer-text">Підпишіться на нашу розсилку прямо зараз і будьте в курсі нових поставок, знижок та
+          ексклюзивних пропозицій.</p>
+      </div>
+      <div class="col-lg-12">
+        <form action="#" class="form-mailing">
+          <input class="form-mailing__input" type="email" placeholder="Ваш email" name="email" required>
+          <button type="submit" class="form-mailing__btn">Підписатися</button>
+        </form>
+        <p class="form-mailing__text">Натискаючи на кнопку “Підписатися”, ви приймаєте правила
+          <a href="#">користувальницької угоди</a>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="footer-menu">
+        <div class="col-4 col-xl-3">
+          <a href="/" class="logo">
+            <img src="./img/header/logo.svg" alt="logo" class="logo__img">
+          </a>
+        </div>
+        <div class="col-6 col-lg-7">
+          <nav class="menu-header">
+            <ul class="navigation navigation_footer">
+              <li>
+                <a href="#">Каталог товарів</a>
+              </li>
+              <li>
+                <a href="#">Блог</a>
+              </li>
+              <li>
+                <a href="#">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</footer>
+<script src="./assets/swiper-bundle.min.js?_v=20221226110158"></script>
+<!-- <script src="./assets/custom-select.js?_v=20221226110158"></script> -->
+<script src="./assets/main.js?_v=20221226110158"></script>
+</body>
+
+</html>

@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Milli</title>
+  <link rel="stylesheet" href="./assets/swiper-bundle.css?_v=20221226110158" />
+  <link rel="stylesheet" href="./assets/bootstrap-reboot.min.css?_v=20221226110158" />
+  <link rel="stylesheet" href="./assets/bootstrap-grid.min.css?_v=20221226110158" />
+  <!-- <link rel="stylesheet" href="./css/main.css?_v=20221226110158" /> -->
+  <link rel="stylesheet" href="./css/main.min.css?_v=20221226110158" />
+</head>
+
+<body>
+  <header class="header">
+  <div class="container">
+    <div class="row">
+      <div class="header-wrapp">
+        <div class="col-lg-3">
+          <a href="/" class="logo">
+            <img src="./img/header/logo.svg" alt="logo" class="logo__img" />
+          </a>
+        </div>
+        <div class="col-lg-7">
+          <nav class="menu-header">
+            <ul class="navigation">
+              <li>
+                <a href="../cart.html">Каталог товарів</a>
+              </li>
+              <li>
+                <a href="../card-product-tea.html">Блог</a>
+              </li>
+              <li>
+                <a href="../card-product-cofe.html">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-lg-2">
+          <div class="button-group">
+            <form action="#" class="searsh-form">
+              <input type="search" name="search" id="" class="search" placeholder="Пошук по товарах" />
+              <button class="search-icon" type="submit">
+                <svg viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="search-icon__svg">
+                  <path
+                    d="M34 33L26.2667 25.5083M30.4444 15.7778C30.4444 23.387 24.0769 29.5556 16.2222 29.5556C8.36751 29.5556 2 23.387 2 15.7778C2 8.16852 8.36751 2 16.2222 2C24.0769 2 30.4444 8.16852 30.4444 15.7778Z"
+                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+              <span class="close"></span>
+            </form>
+            <button type="button" class="cart">
+              <svg viewBox="0 0 37 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2 2H8L12.02 21.7662C12.1572 22.4458 12.5329 23.0563 13.0813 23.4908C13.6298 23.9253 14.316 24.1561 15.02 24.1429H29.6C30.304 24.1561 30.9902 23.9253 31.5387 23.4908C32.0871 23.0563 32.4628 22.4458 32.6 21.7662L35 9.38095H9.5M15.5 31.5238C15.5 32.3391 14.8284 33 14 33C13.1716 33 12.5 32.3391 12.5 31.5238C12.5 30.7085 13.1716 30.0476 14 30.0476C14.8284 30.0476 15.5 30.7085 15.5 31.5238ZM32 31.5238C32 32.3391 31.3284 33 30.5 33C29.6716 33 29 32.3391 29 31.5238C29 30.7085 29.6716 30.0476 30.5 30.0476C31.3284 30.0476 32 30.7085 32 31.5238Z"
+                  stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <button type="button" class="login">
+              <svg viewBox="0 0 33 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M31 34V30.4444C31 28.5585 30.2362 26.7497 28.8765 25.4161C27.5169 24.0825 25.6728 23.3333 23.75 23.3333H9.25C7.32718 23.3333 5.48311 24.0825 4.12348 25.4161C2.76384 26.7497 2 28.5585 2 30.4444V34M23.75 9.11111C23.75 13.0385 20.5041 16.2222 16.5 16.2222C12.4959 16.2222 9.25 13.0385 9.25 9.11111C9.25 5.18375 12.4959 2 16.5 2C20.5041 2 23.75 5.18375 23.75 9.11111Z"
+                  stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="mobi-nenu">
+        <div class="col-5 col-lg-3">
+          <a href="/" class="logo">
+            <img src="./img/header/logo.svg" alt="logo" class="logo__img" />
+          </a>
+        </div>
+        <div class="col-5 col-lg-4 col-xl-2">
+          <div class="button-group">
+            <button type="button" class="cart">
+              <svg viewBox="0 0 37 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2 2H8L12.02 21.7662C12.1572 22.4458 12.5329 23.0563 13.0813 23.4908C13.6298 23.9253 14.316 24.1561 15.02 24.1429H29.6C30.304 24.1561 30.9902 23.9253 31.5387 23.4908C32.0871 23.0563 32.4628 22.4458 32.6 21.7662L35 9.38095H9.5M15.5 31.5238C15.5 32.3391 14.8284 33 14 33C13.1716 33 12.5 32.3391 12.5 31.5238C12.5 30.7085 13.1716 30.0476 14 30.0476C14.8284 30.0476 15.5 30.7085 15.5 31.5238ZM32 31.5238C32 32.3391 31.3284 33 30.5 33C29.6716 33 29 32.3391 29 31.5238C29 30.7085 29.6716 30.0476 30.5 30.0476C31.3284 30.0476 32 30.7085 32 31.5238Z"
+                  stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <button type="button" class="login">
+              <svg viewBox="0 0 33 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M31 34V30.4444C31 28.5585 30.2362 26.7497 28.8765 25.4161C27.5169 24.0825 25.6728 23.3333 23.75 23.3333H9.25C7.32718 23.3333 5.48311 24.0825 4.12348 25.4161C2.76384 26.7497 2 28.5585 2 30.4444V34M23.75 9.11111C23.75 13.0385 20.5041 16.2222 16.5 16.2222C12.4959 16.2222 9.25 13.0385 9.25 9.11111C9.25 5.18375 12.4959 2 16.5 2C20.5041 2 23.75 5.18375 23.75 9.11111Z"
+                  stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="nav-bar">
+              <div class="nav-icon">
+                <span class="line" id="one"></span>
+                <span class="line" id="two"></span>
+                <span class="line" id="three"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-xl-7">
+        <nav class="menu-header menu-header_mobi">
+          <ul class="navigation navigation_mobi">
+            <li>
+              <a href="#">Каталог товарів</a>
+            </li>
+            <li>
+              <a href="#">Блог</a>
+            </li>
+            <li>
+              <a href="#">Контакти</a>
+            </li>
+          </ul>
+          <form action="#" class="searsh-form searsh-form_mobi">
+            <input type="search" name="search" class="search search_mobi" placeholder="Пошук по товарах" />
+          </form>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+  <section class="offer">
+    <div class="container">
+      <div class="col-lg-12">
+        <div class="offer-wrapp">
+          <div class="offer-title">
+            <h1>Свіжообсмажена кава</h1>
+            <p>Кава середнього обсмажування з різних країн зростання з доставкою додому.</p>
+            <p class="offer-desc">Ми обсмажуємо каву <span>кожні вихідні.</span></p>
+            <button type="button" class="btn">Посмотреть каталог</button>
+          </div>
+          <!-- Swiper -->
+          <div class="swiper swiper_head">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper-slide__wrapp">
+                  <picture class="swiper-slide__background">
+                    <source srcset="./img/offer/slider_one_one.webp" type="image/webp">
+                    <img src="./img/offer/slider_one_one.png" alt="slider-photo">
+                  </picture>
+                  <picture class="swiper-slide__photo">
+                    <source srcset="./img/offer/slider_one.webp" type="image/webp">
+                    <img src="./img/offer/slider_one.png" alt="slider-photo">
+                  </picture>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__wrapp">
+                  <picture class="swiper-slide__background">
+                    <source srcset="./img/offer/slider_one_one.webp" type="image/webp">
+                    <img src="./img/offer/slider_one_one.png" alt="slider-photo">
+                  </picture>
+                  <picture class="swiper-slide__photo">
+                    <source srcset="./img/offer/slider_photo_2.webp" type="image/webp">
+                    <img src="./img/offer/slider_photo_2.png" alt="slider-photo">
+                  </picture>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__wrapp">
+                  <picture class="swiper-slide__background">
+                    <source srcset="./img/offer/slider_one_one.webp" type="image/webp">
+                    <img src="./img/offer/slider_one_one.png" alt="slider-photo">
+                  </picture>
+                  <picture class="swiper-slide__photo">
+                    <source srcset="./img/offer/slider-phot_3.webp" type="image/webp">
+                    <img src="./img/offer/slider-phot_3.png" alt="slider-photo">
+                  </picture>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <section class="categories">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Каталоги нашої продукції</h2>
+        </div>
+        <div class="categories-wrapp">
+          <div class="col-lg-5 col-xl-3">
+            <div class="category-card">
+              <picture class="category-card-img">
+                <source srcset="./img/category/coffe.webp" type="image/webp">
+                <img src="./img/category/coffe.png" alt="category-photo">
+              </picture>
+              <h5>Свіжообсмажена кава</h5>
+              <button type="button" class=" btn-category">Придбати</button>
+            </div>
+          </div>
+          <div class="col-lg-5 col-xl-3">
+            <div class="category-card">
+              <picture>
+                <source srcset="./img/category/tea.webp" type="image/webp">
+                <img src="./img/category/tea.png" alt="category-photo">
+              </picture>
+              <h5>Чай та кавові напої</h5>
+              <button type="button" class="btn btn-category">Придбати</button>
+            </div>
+          </div>
+          <div class="col-lg-5 col-xl-3">
+            <div class="category-card">
+              <picture class="category-card-ml">
+                <source srcset="./img/category/coffee-machine.webp" type="image/webp">
+                <img src="./img/category/coffee-machine.png" alt="category-photo">
+              </picture>
+              <h5>Продукція для вендінгу</h5>
+              <button type="button" class=" btn-category">Придбати</button>
+            </div>
+          </div>
+          <div class="col-lg-5 col-xl-3">
+            <div class="category-card category-card_last">
+              <picture>
+                <source srcset="./img/category/eating.webp" type="image/webp">
+                <img src="./img/category/eating.png" alt="category-photo">
+              </picture>
+              <h5>Продукція для вендінгу</h5>
+              <button type="button" class="btn-category">Придбати</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="catalog-product-sale">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="product-home-sale">
+            <h2>Товари зі знижкою</h2>
+            <p>Наша компанія пропонує купувати товар зі знижкою не лише у дні розпродажів або протягом дії обмежених
+              пропозицій, а й користуватися знижками постійно!</p>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="products-sale-wrapp">
+            <div class="col-12 col-xl-11">
+              <div class="swiper swiper_product-sale">
+                <div class="swiper-wrapper">
+                  <!--  Slide 1 -->
+                  <div class="swiper-slide">
+                    <div class="card-coffe-wrapp">
+                      <div class="card-coffe">
+                        <span class="card-coffe__icon"></span>
+                        <div class="itc-select" id="select-1">
+                          <button type="button" class="itc-select__toggle" name="numbers" value="250г"
+                            data-select="toggle" data-index="0">250г</button>
+                          <div class="itc-select__dropdown">
+                            <ul class="itc-select__options">
+                              <li class="itc-select__option itc-select__option_selected" data-select="option"
+                                data-value="250г" data-index="0">250г</li>
+                              <li class="itc-select__option" data-select="option" data-value="750г" data-index="1">750г
+                              </li>
+                              <li class="itc-select__option" data-select="option" data-value="1000г" data-index="2">
+                                1000г</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <span class="card-coffe__text">Знижки</span>
+                        <div class="card-coffe__inner">
+                          <picture class="card-coffe__photo">
+                            <source srcset="./img/products-sale/product.webp" type="image/webp">
+                            <img src="./img/products-sale/product.png" alt="product">
+                          </picture>
+                          <div class="card-coffe__items">
+                            <div class="card-reviews card-reviews_coffe">
+                              <span class="card-reviews__star"></span>
+                              <span class="card-reviews__star"></span>
+                              <span class="card-reviews__star"></span>
+                              <span class="card-reviews__star"></span>
+                              <span class="card-reviews__star"></span>
+                            </div>
+                            <div class="response">
+                              <p>4.0</p>
+                              <span>(32 відгука)</span>
+                            </div>
+                            <div class="strength-coffe">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                            </div>
+                            <div class="quality-coffe">
+                              <p>Кислинка</p>
+                              <div class="quality-properties">
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                              </div>
+                            </div>
+                            <div class="quality-coffe">
+                              <p>Гірчинка</p>
+                              <div class="quality-properties">
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                              </div>
+                            </div>
+                            <div class="quality-coffe">
+                              <p>Насиченість</p>
+                              <div class="quality-properties">
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <h4 class="goods-name-coffe">Colombia Supremo</h4>
+                        <p class="goods-desc-coffe">Свіжообсмажена кава - опис товару, смак, аромат</p>
+                        <span class="price-sale">350 ₴</span>
+                        <div class="price-btn">
+                          <span>250 ₴</span>
+                          <button type="button" class="price-basket">В кошик</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  Slide 2-->
+                  <div class="swiper-slide">
+                    <div class="card-coffe-wrapp">
+                      <div class="card-coffe">
+                        <span class="card-coffe__icon"></span>
+                        <div class="itc-select" id="select-1">
+                          <button type="button" class="itc-select__toggle" name="numbers" value="250г"
+                            data-select="toggle" data-index="0">250г</button>
+                          <div class="itc-select__dropdown">
+                            <ul class="itc-select__options">
+                              <li class="itc-select__option itc-select__option_selected" data-select="option"
+                                data-value="250г" data-index="0">250г</li>
+                              <li class="itc-select__option" data-select="option" data-value="750г" data-index="1">750г
+                              </li>
+                              <li class="itc-select__option" data-select="option" data-value="1000г" data-index="2">
+                                1000г</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="card-coffe__text-wrapp">
+                          <span class="card-coffe__text">Знижки</span>
+                        </div>
+                        <div class="card-coffe__inner">
+                          <picture class="card-coffe__photo">
+                            <source srcset="./img/products-sale/product.webp" type="image/webp">
+                            <img src="./img/products-sale/product.png" alt="product">
+                          </picture>
+                          <div class="card-coffe__items">
+                            <div class="card-reviews card-reviews_coffe">
+                              <span class="card-reviews__star"></span>
+                              <span class="card-reviews__star"></span>
+                              <span class="card-reviews__star"></span>
+                              <span class="card-reviews__star"></span>
+                              <span class="card-reviews__star"></span>
+                            </div>
+                            <div class="response">
+                              <p>4.0</p>
+                              <span>(32 відгука)</span>
+                            </div>
+                            <div class="strength-coffe">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                            </div>
+                            <div class="quality-coffe">
+                              <p>Кислинка</p>
+                              <div class="quality-properties">
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                              </div>
+                            </div>
+                            <div class="quality-coffe">
+                              <p>Гірчинка</p>
+                              <div class="quality-properties">
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                              </div>
+                            </div>
+                            <div class="quality-coffe">
+                              <p>Насиченість</p>
+                              <div class="quality-properties">
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <h4 class="goods-name-coffe">Colombia Supremo</h4>
+                        <p class="goods-desc-coffe">Свіжообсмажена кава - опис товару, смак, аромат</p>
+                        <span class="price-sale">350 ₴</span>
+                        <div class="price-btn">
+                          <span>250 ₴</span>
+                          <button type="button" class="price-basket">В кошик</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  Slide 3 -->
+                  <div class="swiper-slide">
+                    <div class="card-coffe-wrapp">
+                      <div class="card-coffe">
+                        <span class="card-coffe__icon"></span>
+                        <div class="itc-select" id="select-1">
+                          <button type="button" class="itc-select__toggle" name="numbers" value="250г"
+                            data-select="toggle" data-index="0">250г</button>
+                          <div class="itc-select__dropdown">
+                            <ul class="itc-select__options">
+                              <li class="itc-select__option itc-select__option_selected" data-select="option"
+                                data-value="250г" data-index="0">250г</li>
+                              <li class="itc-select__option" data-select="option" data-value="750г" data-index="1">750г
+                              </li>
+                              <li class="itc-select__option" data-select="option" data-value="1000г" data-index="2">
+                                1000г</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="card-coffe__text-wrapp">
+                          <span class="card-coffe__text">Знижки</span>
+                        </div>
+                        <div class="card-coffe__inner">
+                          <picture class="card-coffe__photo">
+                            <source srcset="./img/products-sale/product.webp" type="image/webp">
+                            <img src="./img/products-sale/product.png" alt="product">
+                          </picture>
+                          <div class="card-coffe__items">
+                            <div class="card-reviews card-reviews_coffe">
+                              <span class="card-reviews__star"></span>
+                              <span class="card-reviews__star"></span>
+                              <span class="card-reviews__star"></span>
+                              <span class="card-reviews__star"></span>
+                              <span class="card-reviews__star"></span>
+                            </div>
+                            <div class="response">
+                              <p>4.0</p>
+                              <span>(32 відгука)</span>
+                            </div>
+                            <div class="strength-coffe">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                            </div>
+                            <div class="quality-coffe">
+                              <p>Кислинка</p>
+                              <div class="quality-properties">
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                              </div>
+                            </div>
+                            <div class="quality-coffe">
+                              <p>Гірчинка</p>
+                              <div class="quality-properties">
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                              </div>
+                            </div>
+                            <div class="quality-coffe">
+                              <p>Насиченість</p>
+                              <div class="quality-properties">
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <h4 class="goods-name-coffe">Colombia Supremo</h4>
+                        <p class="goods-desc-coffe">Свіжообсмажена кава - опис товару, смак, аромат</p>
+                        <span class="price-sale">350 ₴</span>
+                        <div class="price-btn">
+                          <span>250 ₴</span>
+                          <button type="button" class="price-basket">В кошик</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  Slide 4 -->
+                  <div class="swiper-slide">
+                    <div class="card-coffe-wrapp">
+                      <div class="card-coffe">
+                        <span class="card-coffe__icon"></span>
+                        <div class="itc-select" id="select-1">
+                          <button type="button" class="itc-select__toggle" name="numbers" value="250г"
+                            data-select="toggle" data-index="0">250г</button>
+                          <div class="itc-select__dropdown">
+                            <ul class="itc-select__options">
+                              <li class="itc-select__option itc-select__option_selected" data-select="option"
+                                data-value="250г" data-index="0">250г</li>
+                              <li class="itc-select__option" data-select="option" data-value="750г" data-index="1">750г
+                              </li>
+                              <li class="itc-select__option" data-select="option" data-value="1000г" data-index="2">
+                                1000г</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="card-coffe__text-wrapp">
+                          <span class="card-coffe__text">Знижки</span>
+                        </div>
+                        <div class="card-coffe__inner">
+                          <picture class="card-coffe__photo">
+                            <source srcset="./img/products-sale/product.webp" type="image/webp">
+                            <img src="./img/products-sale/product.png" alt="product">
+                          </picture>
+                          <div class="card-coffe__items">
+                            <div class="card-reviews card-reviews_coffe">
+                              <span class="card-reviews__star"></span>
+                              <span class="card-reviews__star"></span>
+                              <span class="card-reviews__star"></span>
+                              <span class="card-reviews__star"></span>
+                              <span class="card-reviews__star"></span>
+                            </div>
+                            <div class="response">
+                              <p>4.0</p>
+                              <span>(32 відгука)</span>
+                            </div>
+                            <div class="strength-coffe">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                            </div>
+                            <div class="quality-coffe">
+                              <p>Кислинка</p>
+                              <div class="quality-properties">
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                              </div>
+                            </div>
+                            <div class="quality-coffe">
+                              <p>Гірчинка</p>
+                              <div class="quality-properties">
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                              </div>
+                            </div>
+                            <div class="quality-coffe">
+                              <p>Насиченість</p>
+                              <div class="quality-properties">
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <h4 class="goods-name-coffe">Colombia Supremo</h4>
+                        <p class="goods-desc-coffe">Свіжообсмажена кава - опис товару, смак, аромат</p>
+                        <span class="price-sale">350 ₴</span>
+                        <div class="price-btn">
+                          <span>250 ₴</span>
+                          <button type="button" class="price-basket">В кошик</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--   Slide 5 -->
+                  <div class="swiper-slide">
+                    <div class="card-coffe-wrapp">
+                      <div class="card-coffe">
+                        <span class="card-coffe__icon"></span>
+                        <div class="itc-select" id="select-1">
+                          <button type="button" class="itc-select__toggle" name="numbers" value="250г"
+                            data-select="toggle" data-index="0">250г</button>
+                          <div class="itc-select__dropdown">
+                            <ul class="itc-select__options">
+                              <li class="itc-select__option itc-select__option_selected" data-select="option"
+                                data-value="250г" data-index="0">250г</li>
+                              <li class="itc-select__option" data-select="option" data-value="750г" data-index="1">750г
+                              </li>
+                              <li class="itc-select__option" data-select="option" data-value="1000г" data-index="2">
+                                1000г</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="card-coffe__text-wrapp">
+                          <span class="card-coffe__text">Знижки</span>
+                        </div>
+                        <div class="card-coffe__inner">
+                          <picture class="card-coffe__photo">
+                            <source srcset="./img/products-sale/product.webp" type="image/webp">
+                            <img src="./img/products-sale/product.png" alt="product">
+                          </picture>
+                          <div class="card-coffe__items">
+                            <div class="card-reviews card-reviews_coffe">
+                              <span class="card-reviews__star"></span>
+                              <span class="card-reviews__star"></span>
+                              <span class="card-reviews__star"></span>
+                              <span class="card-reviews__star"></span>
+                              <span class="card-reviews__star"></span>
+                            </div>
+                            <div class="response">
+                              <p>4.0</p>
+                              <span>(32 відгука)</span>
+                            </div>
+                            <div class="strength-coffe">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                            </div>
+                            <div class="quality-coffe">
+                              <p>Кислинка</p>
+                              <div class="quality-properties">
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                              </div>
+                            </div>
+                            <div class="quality-coffe">
+                              <p>Гірчинка</p>
+                              <div class="quality-properties">
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                              </div>
+                            </div>
+                            <div class="quality-coffe">
+                              <p>Насиченість</p>
+                              <div class="quality-properties">
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                                <span class="quality-properties__item quality-properties__item_not-active"></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <h4 class="goods-name-coffe">Colombia Supremo</h4>
+                        <p class="goods-desc-coffe">Свіжообсмажена кава - опис товару, смак, аромат</p>
+                        <span class="price-sale">350 ₴</span>
+                        <div class="price-btn">
+                          <span>250 ₴</span>
+                          <button type="button" class="price-basket">В кошик</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination swiper-pagination_product-cofe"></div>
+              </div>
+              <div class="swiper-button-wrap">
+                <div class="swiper-button-next swiper-button-next_card-next"></div>
+                <div class="swiper-button-prev swiper-button-prev_card-prev"></div>
+              </div>
+            </div>
+
+          </div>
+          <a href="#" class="see-all">Дивитись усі
+            <span class="see-all__bottom-line"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="advantage">
+    <div class="container">
+      <div class="row">
+        <div class="advantage-wrapper">
+          <div class="col-lg-4">
+            <div class="advantage-img">
+              <picture class="advantage-img__coffe">
+                <source srcset="./img/advantage/advantage-coffe.webp" type="image/webp">
+                <img src="./img/advantage/advantage-coffe.png" alt="coffe">
+              </picture>
+              <picture class="advantage-img__grain">
+                <source srcset="./img/advantage/advantage-grain.webp" type="image/webp">
+                <img src="./img/advantage/advantage-grain.png" alt="grain">
+              </picture>
+            </div>
+          </div>
+          <div class="col-12 col-xl-6 offset-xl-2">
+            <div class="advantage-info">
+              <h2 class="advantage-title">Чому варто працювати саме з нами?</h2>
+              <div class="advantage-inner">
+                <img src="./img/advantage/advantage-info-one.svg" alt="icon-one" class="advantage-icon">
+                <div class="advantage-list">
+                  <h4 class="advantage-list__title">Завжди свіжe обсмажування</h4>
+                  <p class="advantage-list__desc">Підбір ступеня обсмажування під кожен сорт кави. Завжди свіжe
+                    обсмажування</p>
+                </div>
+              </div>
+              <div class="advantage-inner">
+                <img src="./img/advantage/advantage-info-two.svg" alt="icon-one" class="advantage-icon">
+                <div class="advantage-list">
+                  <h4 class="advantage-list__title">Найкращі ціни на продукцію</h4>
+                  <p class="advantage-list__desc">Завдяки великим обсягам виробництва ми даємо найкращі ціни на нашу
+                    продукцію</p>
+                </div>
+              </div>
+              <div class="advantage-inner">
+                <img src="./img/advantage/advantage-info-three.svg" alt="icon-one" class="advantage-icon">
+                <div class="advantage-list">
+                  <h4 class="advantage-list__title">Консультації 24/7</h4>
+                  <p class="advantage-list__desc">Наші фахівці готові завжди допомогти та підказати вам з вибором кави
+                    чи іншої продукції.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="info-coffe">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="roasting-coffee">
+            <h2 class="roasting-coffee__title">Як ми обсмажуємо нашу каву:</h2>
+            <p class="roasting-coffee__text">Компанія Нью Рефайнінг Груп знаходиться в м. Україні та має свій склад та
+              представництво у Києві. Завод працює на ринку свіжообсмаженої кави та розчинної продукції понад 15 років.
+              Завод має німецьке обладнання марки Probat з обсмажування кави та італійські агломератори для розчинної
+              продукції.</p>
+            <br>
+            <p class="roasting-coffee__text">Кава поставляється в контейнерах безпосередньо з плантацій по всьому світу.
+              Компанія має довгострокові контракти щодо постачання продукції. Кожна партія проходить суворий контроль
+              заводу для перевірки зерна. Зелене зерно обсмажується, проходить процес дегазації і відразу вирушає
+              клієнтам. Наші обжарювачі пройшли навчання в Україні та за кордоном. Ми маємо свій підхід до кожної партії
+              зерна.</p>
+            <br>
+            <p class="roasting-coffee__text">Ми розкриваємо смак кожного сорту кави.</p>
+            <button type="button" class="roasting-coffee__btn">Перейти до каталогу</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="companys-news">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="companys-news-wrapp">
+            <h2>Новини компанії</h2>
+            <a href="#" class="see-all">Дивитись усі
+              <span class="see-all__bottom-line"></span>
+            </a>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="news-home">
+            <div class="news-card">
+              <picture class="news-card__photo">
+                <source srcset="./img/companys-news/img-new-home.webp" type="image/webp">
+                <img src="./img/companys-news/img-new-home.png" alt="img-news">
+              </picture>
+              <div class="news-card__info">
+                <h5 class="news-card__title">Танзанійська кава. Звідки він узявся і чому ми його так любимо?</h5>
+                <p class="news-card__excerpt">Танзанія – найкрасивіша африканська країна. Саме тут розташовані
+                  легендарні географічні об'єкти – вулкан Кіліманджаро та озеро Вікторія.
+                  <br>
+                  Але наш інтерес викликаний не так природною красою, як кавою...
+                </p>
+                <a href="#" class="more">Детальніше</a>
+              </div>
+            </div>
+            <div class="news-card">
+              <div class="news-card__info">
+                <h5 class="news-card__title">Африканська кава Кенія АА</h5>
+                <p class="news-card__excerpt">Кенія АА – у цієї кави, з африканської країни, репутація одного з
+                  найсмачніших і найяскравіших сортів у світі. Багато обжарювачів високо оцінюють місцеві різновиди
+                  високогірної арабіки.</p>
+                <a href="#" class="more">Детальніше</a>
+              </div>
+            </div>
+            <div class="news-card">
+              <div class="news-card__info">
+                <h5 class="news-card__title">Африканська кава Кенія АА</h5>
+                <p class="news-card__excerpt">Кенія АА – у цієї кави, з африканської країни, репутація одного з
+                  найсмачніших і найяскравіших сортів у світі. Багато обжарювачів високо оцінюють місцеві різновиди
+                  високогірної арабіки.</p>
+                <a href="#" class="more">Детальніше</a>
+              </div>
+            </div>
+            <div class="news-card">
+              <picture class="news-card__photo">
+                <source srcset="./img/companys-news/img-new-home.webp" type="image/webp">
+                <img src="./img/companys-news/img-new-home.png" alt="img-news">
+              </picture>
+              <div class="news-card__info">
+                <h5 class="news-card__title">Танзанійська кава. Звідки він узявся і чому ми його так любимо?</h5>
+                <p class="news-card__excerpt">Танзанія – найкрасивіша африканська країна. Саме тут розташовані
+                  легендарні географічні об'єкти – вулкан Кіліманджаро та озеро Вікторія.
+                  <br>
+                  Але наш інтерес викликаний не так природною красою, як кавою...
+                </p>
+                <a href="#" class="more">Детальніше</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="social-instagram">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="instagram-title">
+            <h2>Ми в Instagram</h2>
+            <img src="./img/social-instagram/instagram-icon.svg" alt="instagram-icon">
+          </div>
+        </div>
+        <div class="social-instagram-wrapper">
+          <div class="col-12 col-xl-4">
+            <div class="apple-wrapp">
+              <picture>
+                <source srcset="./img/social-instagram/айфон1.webp" type="image/webp">
+                <img src="./img/social-instagram/айфон1.png" alt="" айфон1>
+              </picture>
+              <picture class="apple-two">
+                <source srcset="./img/social-instagram/айфон2.webp" type="image/webp">
+                <img src="./img/social-instagram/айфон2.png" alt="айфон2" class="apple-two">
+              </picture>
+            </div>
+          </div>
+          <div class="col-12 col-xl-8">
+            <div class="swiper swiper_social-instagram">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide_insta ">
+                  <!--  Slide 1 -->
+                  <div class="slider-img">1</div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide swiper-slide_insta">
+                  <div class="slider-img">2</div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide swiper-slide_insta">
+                  <div class="slider-img">3</div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="swiper-slide swiper-slide_insta">
+                  <div class="slider-img">4</div>
+                </div>
+                <!-- Slide 5 -->
+                <div class="swiper-slide swiper-slide_insta">
+                  <div class="slider-img">5</div>
+                </div>
+                <!-- Slide 6 -->
+                <div class="swiper-slide swiper-slide_insta">
+                  <div class="slider-img">6</div>
+                </div>
+                <!-- Slide 7 -->
+                <div class="swiper-slide swiper-slide_insta">
+                  <div class="slider-img">7</div>
+                </div>
+                <!-- Slide 8 -->
+                <div class="swiper-slide swiper-slide_insta">
+                  <div class="slider-img">8</div>
+                </div>
+                <!-- Slide 9 -->
+                <div class="swiper-slide swiper-slide_insta">
+                  <div class="slider-img">9</div>
+                </div>
+              </div>
+              <div class="swiper-button-wrap">
+                <div class="swiper-button-next swiper-button-next_card-next s-b--n_insta"></div>
+              </div>
+              <div class="swiper-pagination swiper-pagination_instagram"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="footer-title">Підписка на новини та розсилку</h2>
+        <p class="footer-text">Підпишіться на нашу розсилку прямо зараз і будьте в курсі нових поставок, знижок та
+          ексклюзивних пропозицій.</p>
+      </div>
+      <div class="col-lg-12">
+        <form action="#" class="form-mailing">
+          <input class="form-mailing__input" type="email" placeholder="Ваш email" name="email" required>
+          <button type="submit" class="form-mailing__btn">Підписатися</button>
+        </form>
+        <p class="form-mailing__text">Натискаючи на кнопку “Підписатися”, ви приймаєте правила
+          <a href="#">користувальницької угоди</a>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="footer-menu">
+        <div class="col-4 col-xl-3">
+          <a href="/" class="logo">
+            <img src="./img/header/logo.svg" alt="logo" class="logo__img">
+          </a>
+        </div>
+        <div class="col-6 col-lg-7">
+          <nav class="menu-header">
+            <ul class="navigation navigation_footer">
+              <li>
+                <a href="#">Каталог товарів</a>
+              </li>
+              <li>
+                <a href="#">Блог</a>
+              </li>
+              <li>
+                <a href="#">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</footer>
+<script src="./assets/swiper-bundle.min.js?_v=20221226110158"></script>
+<!-- <script src="./assets/custom-select.js?_v=20221226110158"></script> -->
+<script src="./assets/main.js?_v=20221226110158"></script>
+</body>
+
+</html>
