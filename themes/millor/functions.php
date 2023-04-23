@@ -133,6 +133,18 @@ function millor_widgets_init() {
 			'after_title'   => '</h2>',
 		)
 	);
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Heder sidebar', 'millor' ),
+			'id'            => 'sidebar-header',
+			'description'   => esc_html__( 'Add widgets for header here.', 'millor' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
 }
 add_action( 'widgets_init', 'millor_widgets_init' );
 
@@ -175,6 +187,12 @@ function page_template_custom_select_styles() {
 add_action( 'wp_enqueue_scripts', 'page_template_custom_select_styles' );
 
 
+/*** Перезапис стилів woocommerce ***/
+function woo_style() {
+	wp_register_style( 'millor-woocommerce-css', get_template_directory_uri() . '/woocommerce/assets/css/woocommerce.css', null, 1.0, 'screen' );
+	wp_enqueue_style( 'millor-woocommerce-css' ); 
+} 
+add_action( 'wp_enqueue_scripts', 'woo_style' );
 
 
 /**
@@ -298,31 +316,7 @@ if ( function_exists( 'acf_add_options_page' ) ) {
 
 }
 
+// кількість товарів на сторінці
+// add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 9;' ), 20 );
 
-
-
-
-// add_filter( 'woocommerce_add_to_cart_redirect', 'truemisha_skip_cart' );
-
-// function truemisha_skip_cart( $redirect ) {
-// 	$itemcat = get_query_var( 'term' ); //Ярлык текущего элемента таксономии
-// 	// echo get_term_link( $itemcat, 'product_cat' ); //ссылка на таксономию
-// 	return wc_get_page_permalink( $itemcat );
-
-// }
-
-// add_filter( 'woocommerce_add_to_cart_redirect', 'truemisha_skip_cart' );
-
-// function truemisha_skip_cart( $redirect ) {
-
-// 	// $itemcat = get_query_var( 'term' );
-// 	// $page_id = 23;
-// 	// if ( is_product_category( "freshly-roasted-coffee" ) ) {
-// 	// 	echo get_page_link( $page_id );
-// 	// } else {
-// 	// 	echo "no";
-// 	// }
-// 	return woocommerce_mini_cart();
-
-// }
 

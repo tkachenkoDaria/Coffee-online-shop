@@ -1,0 +1,11 @@
+2023-04-22T11:39:31+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_before_shop_loop() in D:\Programs\OSPanel\domains\Millor\wp-content\themes\millor\woocommerce\content-product-coffe.php:31
+Stack trace:
+#0 D:\Programs\OSPanel\domains\Millor\wp-includes\template.php(785): require()
+#1 D:\Programs\OSPanel\domains\Millor\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template()
+#2 D:\Programs\OSPanel\domains\Millor\wp-content\themes\millor\woocommerce\taxonomy-product-cat\freshly-roasted-coffee.php(350): wc_get_template_part()
+#3 D:\Programs\OSPanel\domains\Millor\wp-includes\template.php(785): require('D:\\Programs\\OSP...')
+#4 D:\Programs\OSPanel\domains\Millor\wp-includes\template.php(718): load_template()
+#5 D:\Programs\OSPanel\domains\Millor\wp-includes\general-template.php(204): locate_template()
+#6 D:\Programs\OSPanel\domains\Millor\wp-content\themes\millor\woocommerce\taxonomy-product-cat.php(26): get_template_part()
+#7 D:\Programs\OSPanel\domains\Millor\wp-includes\template-loader.php(106) в D:\Programs\OSPanel\domains\Millor\wp-content\themes\millor\woocommerce\content-product-coffe.php на строке 31
+

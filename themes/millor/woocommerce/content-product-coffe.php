@@ -28,6 +28,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 
 
 	<?php
+
 	/**
 	 * Hook: woocommerce_before_shop_loop_item.
 	 *
@@ -52,7 +53,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 * @hooked woocommerce_template_loop_product_title - 10
 	 */
 	//  do_action( 'woocommerce_shop_loop_item_title' );
-	
+		woocommerce_show_product_loop_sale_flash();
 	?>
 
 
@@ -84,10 +85,8 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 
 	<!-- rating -->
 	<div class="card-coffe__inner">
-		<picture>
 			<img class="card-coffe__photo" src="<?php echo wp_get_attachment_url( $product->get_image_id() ); ?>"
 				alt="product">
-		</picture>
 		<div class="card-coffe__items">
 
 			<?php
@@ -277,18 +276,18 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 
 		</div>
 	</div>
-	<a href="<?php echo get_permalink( $product->get_id() ); ?>">
-		<h4 class="goods-name-coffe">
-			<?php echo $product->get_name(); ?>
-		</h4>
-	</a>
-	<p class="goods-desc-coffe">
-		<?php echo $product->get_short_description(); ?>
-	</p>
 
 
+		<a href="<?php echo get_permalink( $product->get_id() ); ?>">
+			<h4 class="goods-name-coffe">
+				<?php echo $product->get_name(); ?>
+			</h4>
+		</a>
+		<p class="goods-desc-coffe">
+			<?php echo $product->get_short_description(); ?>
+		</p>
 
-	<?php
+		<?php
 	//  variation product 
 	woocommerce_template_single_add_to_cart();
 	//  end variation product 
@@ -310,4 +309,10 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 */
 	//  do_action( 'woocommerce_after_shop_loop_item' );
 	?>
+
+	
+
+
+
+	
 </div>

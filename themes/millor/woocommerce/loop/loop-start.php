@@ -19,16 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 ?>
-<section class="card-coffe-catalog">
-<div class="container">
-	<div class="row">
-	<div class="col-12">
-		<p>Сортування</p>
-	</div>
-	</div>
-	<div class="row">
-	<div class="col-12">
-		<div class="coffe-catalog-wrapp">
+
 
 
 <!-- 

@@ -20,14 +20,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 
-		</div>
-	</div>
-	</div>
-	<div class="row">
-	<div class="col-12">
-		<button class="see-all-card">Показати ще</button>
-	</div>
-	</div>
-</div>
-</section>
 <!-- </ul> -->

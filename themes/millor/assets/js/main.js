@@ -110,6 +110,21 @@ const closeImg = document.getElementById('close-img');
 // overlay.addEventListener('click',closeModal);
 
 
+// sort product
+
+let sortItemsCoffe = document.querySelector('.orderby');
+
+// sort product coffee
+const urlCoffe = 'http://millor/product-category/all-product/freshly-roasted-coffee';
+if(urlCoffe === 'http://millor/product-category/all-product/freshly-roasted-coffee'){
+  sortItemsCoffe.classList.add('orderby-coffe');
+}
+
+const sortItemsCoffes = document.querySelectorAll('orderby-coffe option');
+sortItemsCoffes.forEach(el => el.addEventListener('click', () => {
+  const data_value = el.getAttribute('data-value');
+  window.location.href = "/product-category/all-product/freshly-roasted-coffee?orderby=" + data_value;
+}));
 
 
 

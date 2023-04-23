@@ -71,7 +71,7 @@
 								</button>
 								<span class="close"></span>
 							</form>
-							<?php woocommerce_get_sidebar(); ?>
+							<?php get_sidebar('header'); ?>
 							<button type="button" class="cart">
 								<svg viewBox="0 0 37 35" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path
@@ -102,7 +102,7 @@
 					</div>
 					<div class="col-5 col-lg-4 col-xl-2">
 						<div class="button-group">
-							<?php woocommerce_get_sidebar(); ?>
+							<?php get_sidebar('header');?>
 							<button type="button" class="cart">
 								<svg viewBox="0 0 37 35" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path
